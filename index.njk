@@ -1,0 +1,11 @@
+<h1>GitHub Issues</h1>
+
+<ul>
+    {% for issue in issues -%}
+    <li>
+        <a href="/issues/{{ issue.slug }}">
+            {{- issue.title -}}
+        </a>
+    </li>
+    {%- endfor %}
+</ul>
