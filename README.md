@@ -1,5 +1,9 @@
 # Eleventy GitHub Issues
 
+Prototype demonstration of rendering a GitHub project issues to a website using Eleventy and Netlify.
+
+Could be used for a simple blog on your website or to produce a report on your issues.
+
 ## Before you start
 
 Make sure you have Git and Node.js (12.x) installed.
