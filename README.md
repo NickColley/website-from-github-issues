@@ -25,7 +25,7 @@ npm install
 
 ### 5. Set up the environment variables
 ```bash
-cp .env.sample .env
+mv .env.sample .env
 ```
 
 1. [Create a personal access](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) token with the 'repo' permissons.
