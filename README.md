@@ -4,6 +4,10 @@ Prototype demonstration of rendering a GitHub project issues to a website using 
 
 Could be used for a simple blog on your website or to produce a report on your issues.
 
+You can see this project rendered here: https://eleventy-github-issue.netlify.app/
+
+Note that only issues created by the owner will show up, but you could configure this to be based on labels or something else.
+
 ## Before you start
 
 Make sure you have Git and Node.js (12.x) installed.
