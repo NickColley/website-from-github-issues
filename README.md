@@ -67,3 +67,7 @@ To deploy on issue changes we can setup a GitHub webhook.
 
 [GitHub docs: Creating webhooks
 ](https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/creating-webhooks#setting-up-a-webhook)
+
+3. Select **Let me select individual events.**
+4. Uncheck 'Pushes' and check 'Issues'.
+5. Click add webhook.
