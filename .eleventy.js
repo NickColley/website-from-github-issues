@@ -1,10 +1,12 @@
-require("dotenv").config();
+const { GITHUB_REPOSITORY_NAME } = require("./lib/constants.js");
 
-const { GITHUB_REPOSITORY } = process.env;
-const repoName = GITHUB_REPOSITORY.split("/")[1];
-
-module.exports = function (eleventyConfig) {
+module.exports = function () {
   return {
-    pathPrefix: `/${repoName}/`,
+    dir: {
+      data: "../data",
+      layouts: "../layouts",
+      input: "./pages",
+    },
+    pathPrefix: `/${GITHUB_REPOSITORY_NAME}/`,
   };
 };

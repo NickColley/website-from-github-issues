@@ -4,7 +4,7 @@ pagination:
   data: issues
   alias: issue
   size: 1
-permalink: "/issues/{{ issue.slug }}/index.html"
+permalink: "{{ issue.path }}/index.html"
 ---
 <a href="/">Home</a>
 
