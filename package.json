@@ -5,7 +5,12 @@
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@octokit/rest": "^18.0.6",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "rehype-stringify": "^8.0.0",
+    "remark-gfm": "^1.0.0",
+    "remark-parse": "^9.0.0",
+    "remark-rehype": "^8.1.0",
+    "unified": "^9.2.2"
   },
   "engines": {
     "node": "12.x"

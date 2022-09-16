@@ -6,8 +6,8 @@ pagination:
   size: 1
 permalink: "{{ issue.path }}/index.html"
 ---
-<a href="{{ '/' | url }}">Home</a>
+[Home]({{ '/' | url }})
 
-<h1>{{ issue.title }}</h1>
+# {{ issue.title }}
 
 {{ issue.body }}
