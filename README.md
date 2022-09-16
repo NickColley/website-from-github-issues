@@ -6,11 +6,11 @@ Could be used for a simple blog on your website or to produce a report on your i
 
 [View the deployed website](../../deployments)
 
-Note that only issues created by the owner will show up, but you could configure this to be based on labels or something else.
-
 ## Installing
 
 Create a [new project with this repository as the template](https://github.com/NickColley/website-from-github-issues/generate).
+
+GitHub will deploy your own website and you can create an issue to see it show up.
 
 ## Developing locally
 
