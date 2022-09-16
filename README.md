@@ -4,7 +4,7 @@ Create a website generated from your GitHub issues.
 
 Could be used for a simple blog on your website or to produce a report on your issues.
 
-You can see this project rendered here: https://nickcolley.github.io/website-from-github-issues/
+[View the deployed website](/deployments)
 
 Note that only issues created by the owner will show up, but you could configure this to be based on labels or something else.
 
