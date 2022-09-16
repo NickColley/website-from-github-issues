@@ -1,0 +1,15 @@
+html {
+  max-width: 900px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 120%;
+}
+blockquote {
+  border-left: 5px solid grey;
+  margin-left: 0;
+  padding-left: 1rem;
+}
+ul {
+  padding-left: 1rem;
+}

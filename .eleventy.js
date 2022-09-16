@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", {
     render: (content) => markdown(content),
   });
+  eleventyConfig.addPassthroughCopy("assets");
   return {
     dir: {
       data: "../data",
