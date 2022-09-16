@@ -6,6 +6,7 @@
     "@11ty/eleventy": "^0.11.0",
     "@octokit/rest": "^18.0.6",
     "dotenv": "^8.2.0",
+    "rehype-format": "^3.1.0",
     "rehype-stringify": "^8.0.0",
     "remark-breaks": "^2.0.2",
     "remark-emoji": "^2.2.0",
@@ -17,6 +18,6 @@
     "unified": "^9.2.2"
   },
   "engines": {
-    "node": "12.x"
+    "node": "16.x"
   }
 }
