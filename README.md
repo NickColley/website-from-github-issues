@@ -4,7 +4,7 @@ Create a website generated from your GitHub issues.
 
 Could be used for a simple blog on your website or to produce a report on your issues.
 
-[View the deployed website](/deployments)
+[View the deployed website](../../deployments)
 
 Note that only issues created by the owner will show up, but you could configure this to be based on labels or something else.
 
