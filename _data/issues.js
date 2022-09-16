@@ -3,6 +3,17 @@ const { Octokit } = require("@octokit/rest");
 
 const { GITHUB_TOKEN, GITHUB_REPOSITORY } = process.env;
 
+if (!GITHUB_TOKEN) {
+  throw new Error(
+    "No GITHUB_TOKEN environment variable set. If working locally copy the .env.sample file to .env."
+  );
+}
+if (!GITHUB_REPOSITORY) {
+  throw new Error(
+    "No GITHUB_REPOSITORY environment variable set. If working locally copy the .env.sample file to .env."
+  );
+}
+
 const octokit = new Octokit({
   auth: GITHUB_TOKEN,
 });
@@ -31,6 +42,7 @@ module.exports = async function () {
           ),
           10
         );
+
         return {
           slug: id,
           title: issue.title,
