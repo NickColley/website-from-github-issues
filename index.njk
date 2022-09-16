@@ -7,7 +7,7 @@ title: Home
 <ul>
     {% for issue in issues -%}
     <li>
-        <a href="/issues/{{ issue.slug }}">
+        <a href="{{ "/issues/" + issue.slug | url }}">
             {{- issue.title -}}
         </a>
     </li>
