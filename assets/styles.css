@@ -4,6 +4,7 @@ html {
   font-family: sans-serif;
   line-height: 1.5;
   font-size: 120%;
+  color: #0b0c0c;
 }
 blockquote {
   border-left: 5px solid grey;
@@ -12,4 +13,69 @@ blockquote {
 }
 ul {
   padding-left: 1rem;
+}
+
+/* GitHub specific styling */
+.contains-task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.task-list-item {
+  --checkbox-size: 1.3em;
+  position: relative;
+  margin-bottom: 0.25em;
+  padding-left: calc(var(--checkbox-size) + 0.449999em);
+}
+
+.task-list-item > input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+}
+@supports selector(:has()) {
+  /* Hide the original checkbox since we're making our own */
+  .task-list-item > input[type="checkbox"] {
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .task-list-item:has(> input[type="checkbox"]:first-child)::before,
+  .task-list-item:has(> input[type="checkbox"]:first-child)::after {
+    cursor: not-allowed;
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    margin: auto;
+  }
+  .task-list-item:has(> input[type="checkbox"]:first-child)::before {
+    bottom: 0;
+    left: 0;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    border: 0.125em solid;
+    border-radius: 5px;
+  }
+  .task-list-item:has(> input[type="checkbox"]:first-child)::after {
+    bottom: 0.1875em;
+    left: 0.25em;
+    width: 0.8125em;
+    height: 0.4375em;
+    transform: rotate(-45deg);
+    border: solid;
+    border-width: 0 0 0.1875em 0.1875em;
+  }
+  .task-list-item:has(> input[type="checkbox"][checked]:first-child)::after {
+    opacity: 1;
+  }
 }
