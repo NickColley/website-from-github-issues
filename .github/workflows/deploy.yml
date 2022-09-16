@@ -4,7 +4,13 @@ on:
   push:
     branches: [main]
   issues:
-    types: [opened, edited]
+    types:
+      - opened
+      - edited
+      - deleted
+      - transferred
+      - closed
+      - reopened
 
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
