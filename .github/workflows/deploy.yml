@@ -1,11 +1,6 @@
 name: Deploy
 on: [push]
 
-
-env:
-  GITHUB_OWNER: nickcolley
-  GITHUB_REPO: eleventy-github-issues
-
 jobs:
   build_deploy:
     runs-on: ubuntu-20.04
